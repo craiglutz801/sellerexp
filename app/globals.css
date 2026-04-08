@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0c0f14;
+  --paper: #f6f5f2;
+  --accent: #7cb9e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+/* Product UI: reliable card chrome (avoids flaky arbitrary Tailwind classes in some builds) */
+@layer components {
+  .app-card {
+    @apply rounded-2xl border border-warm-400/30 bg-white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Very subtle blue at top — “a little” brand color */
+  .app-shell-main {
+    background-color: #f6f5f2;
+    background-image: linear-gradient(
+      180deg,
+      rgba(124, 185, 232, 0.08) 0%,
+      rgba(246, 245, 242, 0) 40%,
+      #f6f5f2 100%
+    );
+  }
+}
+
+.section-padding {
+  @apply px-5 py-20 sm:px-8 sm:py-24 md:px-12 md:py-28 lg:px-16 lg:py-32;
+}
+
+.container-narrow {
+  @apply max-w-3xl mx-auto;
+}
+
+.container-wide {
+  @apply max-w-5xl mx-auto;
+}
+
+.container-max {
+  @apply max-w-6xl mx-auto;
+}
+
+/* Subtle focus for accessibility */
+a:focus-visible,
+button:focus-visible {
+  @apply outline-2 outline-offset-2 outline-accent;
+}

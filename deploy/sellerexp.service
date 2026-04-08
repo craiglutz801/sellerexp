@@ -1,0 +1,24 @@
+# Install:
+#   sudo cp deploy/sellerexp.service /etc/systemd/system/sellerexp.service
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now sellerexp
+#
+# Edit WorkingDirectory and ExecStart paths if your project is not under /home/ubuntu/SellerEXP.
+# ExecStart must use the same Node binary you use for `npm run build` (which node).
+
+[Unit]
+Description=SellerEXP Next.js
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/SellerEXP
+Environment=NODE_ENV=production
+Environment=PORT=3001
+ExecStart=/usr/bin/npm run start
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
