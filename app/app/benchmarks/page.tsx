@@ -23,17 +23,17 @@ export default function BenchmarksPage() {
           score={MOCK_BENCHMARK.yourScore}
           deltaCycle={3}
           deltaBenchmark={6}
-          footnote="Headline index vs peer median (mock)."
+          footnote="Headline index vs peer median."
         />
         <ScoreCard
           label="Peer median"
           score={MOCK_BENCHMARK.peerMedian}
-          footnote="Anonymized B2B SaaS peer set (mock n)."
+          footnote="Anonymized B2B SaaS peer set."
         />
         <ScoreCard
           label="Top internal teams"
           score={MOCK_BENCHMARK.internalTopTeam}
-          footnote="Best-performing internal cohort this cycle (mock)."
+          footnote="Best-performing internal cohort this cycle."
         />
       </div>
 

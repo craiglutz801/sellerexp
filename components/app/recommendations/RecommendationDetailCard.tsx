@@ -36,7 +36,7 @@ export default function RecommendationDetailCard({ rec }: { rec: Recommendation 
             <p className="mt-2 text-sm text-warm-600 leading-relaxed">{rec.expectedImpact}</p>
           </div>
           <div className="rounded-xl border border-warm-400/30 bg-cream/30 p-4">
-            <h3 className="text-xs font-semibold uppercase tracking-wider text-warm-500">Linked evidence (mock)</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-warm-500">Linked evidence</h3>
             <p className="mt-2 text-sm text-ink leading-relaxed">{rec.evidenceSummary}</p>
           </div>
         </div>

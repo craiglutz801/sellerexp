@@ -5,7 +5,7 @@
 ## Project structure
 
 - **Landing page** (`/`) — Marketing site built from the landing page design doc. Goal: convert CROs, RevOps, and GTM leaders to book a demo.
-- **Product app** (`/app/*`) — Revenue Organization Intelligence UI for licensed customers. Spec: `SellerEXP_Product_Blueprint (1).md`. Uses mock data until backend and auth are wired.
+- **Product app** (`/app/*`) — Revenue Organization Intelligence UI for licensed customers. Spec: `SellerEXP_Product_Blueprint (1).md`. Uses sample data until backend and auth are wired.
 
 ### Product routes
 

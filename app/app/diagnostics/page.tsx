@@ -16,7 +16,7 @@ export default function DiagnosticsPage() {
       <SectionHeader
         eyebrow="Diagnostics"
         title="Where operational friction shows up — by dimension, stage, and driver."
-        description="Structured assessment of the revenue operating environment: process, tools, enablement, alignment, support, and incentives. Filters for segment / team ship next; mock data is global."
+        description="Structured assessment of the revenue operating environment: process, tools, enablement, alignment, support, and incentives. Filters for segment / team ship next."
       />
 
       <section className="mb-12">
@@ -56,7 +56,7 @@ export default function DiagnosticsPage() {
       <section className="mb-12 grid gap-8 lg:grid-cols-2">
         <div>
           <h2 className="text-lg font-semibold text-ink mb-2">Friction by sales stage</h2>
-          <p className="text-sm text-warm-600 mb-6">Lower bars = more friction signal in this mock model.</p>
+          <p className="text-sm text-warm-600 mb-6">Lower bars = more friction signal in the model.</p>
           <div className="space-y-4">
             {MOCK_STAGE_FRICTION.map((s) => (
               <div key={s.stage}>
@@ -76,7 +76,7 @@ export default function DiagnosticsPage() {
         </div>
         <div>
           <h2 className="text-lg font-semibold text-ink mb-2">Driver ranking</h2>
-          <p className="text-sm text-warm-600 mb-6">Severity index × prevalence (mock). Ownership hints route to recommendations.</p>
+          <p className="text-sm text-warm-600 mb-6">Severity index × prevalence. Ownership hints route to recommendations.</p>
           <ul className="space-y-4">
             {MOCK_DRIVERS.map((d) => (
               <li

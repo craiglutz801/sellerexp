@@ -39,7 +39,7 @@ export type Recommendation = {
   effort: 'Low' | 'Medium' | 'High'
   /** 1 = low effort, 3 = high effort — for prioritization matrix */
   effortAxis: 1 | 2 | 3
-  /** 1 = lower impact, 5 = higher impact — mock model */
+  /** 1 = lower impact, 5 = higher impact */
   impactAxis: 1 | 2 | 3 | 4 | 5
   confidence: number
   category: string

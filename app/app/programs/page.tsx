@@ -57,7 +57,7 @@ export default function ProgramsPage() {
                   style={{ width: `${Math.min(100, (p.responseRate / p.targetRate) * 100)}%` }}
                 />
               </div>
-              <p className="mt-2 text-xs text-warm-500">Participation progress toward target (mock).</p>
+              <p className="mt-2 text-xs text-warm-500">Participation progress toward target.</p>
             </div>
           </article>
         ))}

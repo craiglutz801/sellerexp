@@ -31,9 +31,6 @@ export default function AppTopbar({ cycle, onMenu }: Props) {
           <span className="rounded-full border border-warm-400/40 bg-white px-3 py-1.5 text-xs font-medium text-warm-600">
             Demo workspace
           </span>
-          <span className="rounded-full bg-accent/15 text-ink px-3 py-1.5 text-xs font-semibold">
-            Mock data
-          </span>
         </div>
       </div>
     </header>

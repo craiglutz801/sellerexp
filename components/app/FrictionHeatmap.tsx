@@ -49,7 +49,7 @@ export default function FrictionHeatmap({ cells }: { cells: FrictionCell[] }) {
         </tbody>
       </table>
       <p className="px-4 py-3 text-xs text-warm-500 border-t border-warm-400/30">
-        Darker cells indicate higher modeled friction (mock). Pair with sample size in live data.
+        Darker cells indicate higher modeled friction. Pair with sample size and confidence where available.
       </p>
     </div>
   )

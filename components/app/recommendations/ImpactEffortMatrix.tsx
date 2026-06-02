@@ -5,7 +5,7 @@ import type { Recommendation } from '@/lib/types/platform'
 export default function ImpactEffortMatrix({ items }: { items: Recommendation[] }) {
   return (
     <div className="app-card p-6">
-      <h3 className="text-sm font-semibold text-ink">Impact vs. effort (mock)</h3>
+      <h3 className="text-sm font-semibold text-ink">Impact vs. effort</h3>
       <p className="mt-1 text-xs text-warm-500 mb-6">
         Upper-left quadrant = higher modeled leverage with lower execution cost. Used for prioritization narratives, not project planning.
       </p>

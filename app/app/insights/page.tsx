@@ -17,7 +17,7 @@ export default function InsightsPage() {
       />
 
       <div className="rounded-2xl border border-accent/25 bg-accent/10 p-6 md:p-8 mb-10 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
-        <p className="text-xs font-semibold uppercase tracking-wider text-warm-600">AI executive summary (mock)</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-warm-600">AI executive summary</p>
         <p className="mt-4 text-lg text-ink leading-relaxed">
           Revenue org health is improving modestly cycle-over-cycle, driven by enablement and process clarity. The dominant risk is{' '}
           <span className="font-semibold">late-stage confidence</span>: enterprise sellers report inconsistent manager coaching and slower
@@ -36,7 +36,7 @@ export default function InsightsPage() {
       </div>
 
       <section className="mt-12 rounded-2xl border border-rose-500/20 bg-rose-500/[0.04] p-6">
-        <h3 className="text-sm font-semibold text-ink">Risk flags (mock)</h3>
+        <h3 className="text-sm font-semibold text-ink">Risk flags</h3>
         <ul className="mt-4 space-y-3 text-sm text-warm-600">
           <li className="flex gap-2">
             <span className="text-rose-600 font-bold">·</span>

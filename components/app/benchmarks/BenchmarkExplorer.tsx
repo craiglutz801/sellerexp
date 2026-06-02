@@ -40,8 +40,8 @@ export default function BenchmarkExplorer({ external, internal }: Props) {
       </div>
       <p className="text-sm text-warm-600 max-w-3xl leading-relaxed">
         {mode === 'external'
-          ? 'Benchmarks vs anonymized peer cohort (mock). In production, label sample size, methodology, and confidence explicitly — never overclaim precision.'
-          : 'Internal view compares your score to company average and top-performing teams (mock). Use this to find pockets of excellence to replicate.'}
+          ? 'Benchmarks vs anonymized peer cohort. Label sample size, methodology, and confidence explicitly — never overclaim precision.'
+          : 'Internal view compares your score to company average and top-performing teams. Use this to find pockets of excellence to replicate.'}
       </p>
       <BenchmarkBars
         data={mode === 'external' ? external : internal}
