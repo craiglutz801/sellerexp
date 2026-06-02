@@ -27,12 +27,12 @@ export const MOCK_HEALTH_INDEX = {
 }
 
 export const MOCK_SPARKLINE = [
-  { x: 0, y: 71 },
-  { x: 1, y: 73 },
-  { x: 2, y: 72 },
-  { x: 3, y: 75 },
-  { x: 4, y: 76 },
-  { x: 5, y: 78 },
+  { cycle: 'Aug 2024', y: 71 },
+  { cycle: 'Oct 2024', y: 73 },
+  { cycle: 'Dec 2024', y: 72 },
+  { cycle: 'Feb 2025', y: 75 },
+  { cycle: 'Apr 2025', y: 76 },
+  { cycle: 'Jun 2025', y: 78 },
 ]
 
 export const MOCK_PILLARS: PillarScore[] = [

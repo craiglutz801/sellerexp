@@ -54,14 +54,15 @@ export default function OverviewPage() {
       <SectionHeader
         eyebrow="Revenue organization health"
         title="Your revenue organization is healthy overall — but seller confidence is breaking down in key moments."
-        description="This overview is a narrative-first executive view: overall health, where friction concentrates, what changed, how you compare, and what to do next. All figures below are mock data for product scaffolding."
+        description="This overview is a narrative-first executive view: overall health, where friction concentrates, what changed, how you compare, and what to do next."
       />
 
-      <div className="grid gap-6 lg:grid-cols-2 lg:gap-8 items-start">
-        <div className="app-card p-6 md:p-8">
+      <div className="grid gap-6 lg:grid-cols-2 lg:gap-8 lg:items-stretch">
+        <div className="app-card flex h-full min-h-full flex-col p-6 md:p-8">
           <p className="text-xs font-semibold uppercase tracking-wider text-warm-500">Executive summary</p>
           <p className="mt-4 text-lg text-ink leading-relaxed">{MOCK_HEALTH_INDEX.narrative}</p>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="min-h-6 flex-1" aria-hidden />
+          <div className="flex flex-wrap gap-3">
             <Link
               href="/app/diagnostics"
               className="inline-flex items-center rounded-full bg-accent-dark px-5 py-2.5 text-sm font-semibold text-white hover:bg-ink transition-colors"
@@ -77,11 +78,13 @@ export default function OverviewPage() {
           </div>
         </div>
         <ScoreCard
-          label="Revenue org health index"
+          label="Seller Experience Overall Index Score"
           score={MOCK_HEALTH_INDEX.score}
           deltaCycle={MOCK_HEALTH_INDEX.deltaCycle}
           deltaBenchmark={MOCK_HEALTH_INDEX.deltaBenchmark}
           footnote="Normalized 0–100. In production, pair with sample size, confidence, and cycle context."
+          className="h-full min-h-full md:p-8"
+          emphasized
         />
       </div>
 
@@ -89,7 +92,7 @@ export default function OverviewPage() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-warm-500">Trend</p>
-            <p className="mt-1 text-sm font-medium text-ink">Trailing measurement cycles (mock)</p>
+            <p className="mt-1 text-sm font-medium text-ink">Seller Experience Index Score</p>
           </div>
         </div>
         <TrendSparkline data={MOCK_SPARKLINE} />
@@ -163,7 +166,9 @@ export default function OverviewPage() {
 
       <section className="mt-14">
         <h2 className="text-lg font-semibold tracking-tight text-ink mb-2">Qualitative themes</h2>
-        <p className="text-sm text-warm-600 mb-6">Clustered seller language (mock). Production uses controlled disclosure, not raw dumps.</p>
+        <p className="text-sm text-warm-600 mb-6">
+          Clustered seller language. Production uses controlled disclosure, not raw dumps.
+        </p>
         <div className="grid gap-6 md:grid-cols-2">
           {MOCK_THEMES.map((t) => (
             <ThemeClusterCard

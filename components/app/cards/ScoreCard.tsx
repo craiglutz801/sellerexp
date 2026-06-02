@@ -6,6 +6,7 @@ type Props = {
   deltaBenchmark?: number
   footnote?: string
   className?: string
+  emphasized?: boolean
 }
 
 function Delta({ value, label }: { value: number; label: string }) {
@@ -37,11 +38,16 @@ export default function ScoreCard({
   deltaBenchmark,
   footnote,
   className = '',
+  emphasized = false,
 }: Props) {
   return (
-    <div className={`app-card p-6 ${className}`}>
+    <div className={`app-card flex h-full flex-col p-6 ${className}`}>
       <p className="text-xs font-semibold uppercase tracking-wider text-warm-500">{label}</p>
-      <p className="mt-3 text-4xl font-semibold tracking-tight text-ink tabular-nums">
+      <p
+        className={`mt-3 font-semibold tracking-tight text-ink tabular-nums ${
+          emphasized ? 'text-5xl sm:text-6xl' : 'text-4xl'
+        }`}
+      >
         {score}
         {suffix}
       </p>
@@ -55,7 +61,14 @@ export default function ScoreCard({
           vs benchmark
         </p>
       ) : null}
-      {footnote ? <p className="mt-4 text-sm text-warm-600 leading-relaxed border-t border-warm-400/30 pt-4">{footnote}</p> : null}
+      {footnote ? (
+        <>
+          <div className="min-h-4 flex-1" aria-hidden />
+          <p className="border-t border-warm-400/25 pt-3 text-[0.6875rem] leading-snug text-warm-500">
+            {footnote}
+          </p>
+        </>
+      ) : null}
     </div>
   )
 }
