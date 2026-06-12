@@ -2,6 +2,7 @@
 node_modules/
 .next/
 out/
+.tmp_pydeps/
 
 # Local portable Node downloads (not checked in)
 .local/

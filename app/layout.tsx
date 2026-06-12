@@ -9,8 +9,9 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'SellerEXP — Revenue Organization Intelligence',
-  description: 'SellerEXP helps revenue leaders measure the health of their sales organization by revealing operational friction, misalignment, and support gaps that slow sellers down.',
+  title: 'SellerEXP — Revenue Organization Intelligence & Seller Enablement Kits',
+  description:
+    'SellerEXP helps revenue leaders diagnose sales org friction and turn seller feedback into personalized enablement kits for every rep.',
 }
 
 export default function RootLayout({

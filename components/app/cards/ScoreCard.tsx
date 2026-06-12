@@ -41,8 +41,10 @@ export default function ScoreCard({
   emphasized = false,
 }: Props) {
   return (
-    <div className={`app-card flex h-full flex-col p-6 ${className}`}>
-      <p className="text-xs font-semibold uppercase tracking-wider text-warm-500">{label}</p>
+    <div
+      className={`app-card flex h-full flex-col p-6 ${emphasized ? 'app-card-accent ring-1 ring-accent/15' : ''} ${className}`}
+    >
+      <p className="app-eyebrow text-warm-500">{label}</p>
       <p
         className={`mt-3 font-semibold tracking-tight text-ink tabular-nums ${
           emphasized ? 'text-5xl sm:text-6xl' : 'text-4xl'

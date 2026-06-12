@@ -1,32 +1,28 @@
-const ROLES = [
-  'Chief Revenue Officers',
-  'Revenue Operations Leaders',
-  'Sales Operations Teams',
-  'Sales Enablement Leaders',
-  'GTM Strategy Teams',
-]
+import { ROLE_CARDS } from '@/lib/landing/content'
 
 export default function WhoItsFor() {
   return (
-    <section id="who-its-for" className="section-padding bg-paper">
-      <div className="container-narrow text-center">
-        <h2 className="text-section font-bold text-ink max-w-2xl mx-auto">
+    <section id="who-its-for" className="section-padding bg-cream">
+      <div className="container-wide">
+        <h2 className="text-section font-bold text-ink text-center max-w-2xl mx-auto">
           Built for Complex Revenue Organizations
         </h2>
-        <p className="mt-10 text-warm-600 text-lg max-w-xl mx-auto leading-relaxed">
-          SellerEXP is designed for companies where operational complexity creates distance between leadership and the day-to-day reality of sellers.
+        <p className="mt-10 text-warm-600 text-lg max-w-xl mx-auto text-center leading-relaxed">
+          SellerEXP is designed for companies where operational complexity creates distance between leadership and the
+          day-to-day reality of sellers.
         </p>
-        <ul className="mt-12 flex flex-wrap justify-center gap-3">
-          {ROLES.map((role) => (
-            <li
-              key={role}
-              className="rounded-full bg-cream border border-warm-400/30 px-5 py-2.5 text-sm font-medium text-ink"
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {ROLE_CARDS.map((card) => (
+            <div
+              key={card.role}
+              className="rounded-2xl bg-paper border border-warm-400/20 p-6 hover:border-accent/30 hover:shadow-sm transition-all"
             >
-              {role}
-            </li>
+              <h3 className="font-semibold text-ink">{card.role}</h3>
+              <p className="mt-2 text-sm text-warm-600 leading-relaxed">{card.desc}</p>
+            </div>
           ))}
-        </ul>
-        <p className="mt-12 text-warm-600 font-medium">
+        </div>
+        <p className="mt-12 text-warm-600 font-medium text-center">
           Best fit for organizations with <span className="text-ink">100+ sellers</span>.
         </p>
       </div>

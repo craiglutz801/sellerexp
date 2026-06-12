@@ -16,10 +16,17 @@ export default function CostOfFriction() {
         </h2>
         <div className="mt-10 max-w-2xl mx-auto space-y-5 text-warm-400 text-lg leading-relaxed text-center">
           <p>
-            Operational friction slows sellers down every day. It shows up as wasted selling time, slower deal cycles, lower quota attainment, avoidable turnover, and inconsistent execution across teams.
+            Operational friction slows sellers down every day. It shows up as wasted selling time, slower deal cycles,
+            lower quota attainment, avoidable turnover, and inconsistent execution across teams.
           </p>
           <p>
-            Most organizations discover these problems too late—after productivity slips, top performers disengage, pipeline quality weakens, or revenue targets are missed. SellerEXP helps leadership see those issues earlier, diagnose them faster, and act with confidence.
+            Most organizations discover these problems too late—after productivity slips, top performers disengage,
+            pipeline quality weakens, or revenue targets are missed.
+          </p>
+          <p>
+            And while leadership works on systemic fixes, sellers still need help today. A delayed deal desk SLA,
+            confusing handoff process, weak ROI story, or unclear stage expectation can affect the next opportunity on
+            their calendar. SellerEXP helps the organization improve while giving sellers practical support immediately.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
@@ -31,6 +38,13 @@ export default function CostOfFriction() {
               <span className="text-sm font-medium text-warm-400">{label}</span>
             </div>
           ))}
+        </div>
+        <div className="mt-12 max-w-2xl mx-auto rounded-2xl border border-accent/30 bg-accent/10 px-6 py-5 text-center">
+          <p className="text-sm font-semibold text-accent-light uppercase tracking-wide mb-2">The key insight</p>
+          <p className="text-warm-400 leading-relaxed">
+            Some friction requires leadership action. Some friction can be reduced immediately with the right playbook,
+            template, checklist, or drill.
+          </p>
         </div>
       </div>
     </section>

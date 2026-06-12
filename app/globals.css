@@ -18,14 +18,49 @@ body {
   background: var(--paper);
 }
 
-/* Product UI: reliable card chrome (avoids flaky arbitrary Tailwind classes in some builds) */
+/* Product UI: scoped to /app shell only (landing page unchanged) */
+@layer components {
+  .product-shell {
+    @apply text-ink;
+    font-feature-settings: 'ss01' on, 'cv11' on;
+    background-color: #fafbfd;
+  }
+
+  .product-shell .app-card {
+    @apply rounded-2xl border border-warm-400/20 bg-white;
+    box-shadow:
+      0 1px 2px rgba(12, 15, 20, 0.04),
+      0 12px 40px rgba(12, 15, 20, 0.06);
+  }
+
+  .product-shell .app-card-accent {
+    @apply border-accent/25 bg-gradient-to-br from-white via-white to-accent-soft/40;
+  }
+
+  .product-shell .app-shell-main {
+    background-color: #fafbfd;
+    background-image:
+      radial-gradient(ellipse 90% 55% at 50% -10%, rgba(124, 185, 232, 0.11) 0%, transparent 58%),
+      linear-gradient(180deg, rgba(232, 243, 250, 0.5) 0%, transparent 42%, #fafbfd 100%);
+  }
+
+  .product-shell .section-title {
+    @apply text-lg font-semibold tracking-tight text-ink;
+    letter-spacing: -0.015em;
+  }
+
+  .product-shell .app-eyebrow {
+    @apply text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-accent-dark;
+  }
+}
+
+/* Landing + shared card fallback (non-product pages) */
 @layer components {
   .app-card {
     @apply rounded-2xl border border-warm-400/30 bg-white;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
   }
 
-  /* Very subtle blue at top — “a little” brand color */
   .app-shell-main {
     background-color: #f6f5f2;
     background-image: linear-gradient(

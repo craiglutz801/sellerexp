@@ -7,12 +7,17 @@ export default function FinalClose() {
         </h2>
         <div className="mt-10 max-w-xl mx-auto space-y-5 text-warm-400 text-lg leading-relaxed">
           <p>
-            Companies invest heavily in understanding customers. But the next frontier of revenue intelligence is understanding the environment in which sellers operate.
+            Companies invest heavily in understanding customers. But the next frontier of revenue intelligence is
+            understanding and improving the environment in which sellers operate.
           </p>
           <p>
-            SellerEXP gives revenue leaders a structured system for measuring, diagnosing, and improving that environment—so sellers can perform at their best.
+            SellerEXP gives revenue leaders a structured system for measuring, diagnosing, and improving that
+            environment — while giving sellers personalized support they can use immediately.
           </p>
         </div>
+        <p className="mt-12 text-xl font-semibold text-accent-light max-w-lg mx-auto">
+          Measure the seller experience. Fix the revenue system. Help every seller win.
+        </p>
       </div>
     </section>
   )

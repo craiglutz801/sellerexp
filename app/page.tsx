@@ -1,10 +1,16 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import TrustFitStrip from '@/components/TrustFitStrip'
 import CategoryInsight from '@/components/CategoryInsight'
 import CostOfFriction from '@/components/CostOfFriction'
+import BrokenFeedbackLoop from '@/components/BrokenFeedbackLoop'
 import Solution from '@/components/Solution'
+import TwoOutcomes from '@/components/TwoOutcomes'
+import EnablementKits from '@/components/EnablementKits'
+import KitAnatomy from '@/components/KitAnatomy'
 import HowItWorks from '@/components/HowItWorks'
 import WhatWeMeasure from '@/components/WhatWeMeasure'
+import PrivacyTrust from '@/components/PrivacyTrust'
 import Benefits from '@/components/Benefits'
 import Benchmarking from '@/components/Benchmarking'
 import WhoItsFor from '@/components/WhoItsFor'
@@ -20,11 +26,17 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <TrustFitStrip />
         <CategoryInsight />
         <CostOfFriction />
+        <BrokenFeedbackLoop />
         <Solution />
+        <TwoOutcomes />
+        <EnablementKits />
+        <KitAnatomy />
         <HowItWorks />
         <WhatWeMeasure />
+        <PrivacyTrust />
         <Benefits />
         <Benchmarking />
         <WhoItsFor />

@@ -1,42 +1,41 @@
-const STEPS = [
-  {
-    title: 'Gather Seller Insight',
-    body: 'Structured programs collect quantitative and qualitative feedback from sellers about the systems, processes, and support structures that affect performance.',
-  },
-  {
-    title: 'Diagnose the Organization',
-    body: 'SellerEXP identifies patterns, friction points, operational gaps, and areas of misalignment across the revenue organization.',
-  },
-  {
-    title: 'Deliver Leadership Intelligence',
-    body: 'Executives receive dashboards, summaries, benchmark views, and AI-guided insight into what is helping—or preventing—sellers from winning.',
-  },
-  {
-    title: 'Improve and Track Progress',
-    body: 'Leaders make targeted operational improvements and measure whether the seller experience improves over time.',
-  },
-]
+import { HOW_IT_WORKS_STEPS } from '@/lib/landing/content'
+import SectionEyebrow from '@/components/SectionEyebrow'
 
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="section-padding bg-paper">
       <div className="container-wide">
-        <h2 className="text-section font-bold text-ink text-center max-w-2xl mx-auto">
-          A Continuous Intelligence Loop for Revenue Organizations
+        <SectionEyebrow>How it works</SectionEyebrow>
+        <h2 className="text-section font-bold text-ink text-center max-w-3xl mx-auto">
+          A Continuous Intelligence Loop That Helps Leaders and Sellers Act
         </h2>
-        <div className="mt-20 grid md:grid-cols-4 gap-6 lg:gap-8">
-          {STEPS.map((step, i) => (
+
+        <div className="mt-16 hidden lg:flex justify-center mb-12">
+          <div className="rounded-2xl border border-warm-400/25 bg-cream/50 px-8 py-6 text-center max-w-lg">
+            <p className="text-xs font-semibold uppercase tracking-wider text-warm-500">The loop</p>
+            <p className="mt-3 text-sm text-warm-600 leading-relaxed">
+              Gather → Diagnose → <span className="text-ink font-medium">Leadership action</span> +{' '}
+              <span className="text-accent-dark font-medium">Seller kits</span> → Measure improvement
+            </p>
+          </div>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-4">
+          {HOW_IT_WORKS_STEPS.map((step, i) => (
             <div key={step.title} className="relative">
-              <div className="h-full rounded-2xl border-l-4 border-accent bg-cream/50 p-6 md:p-8 pl-8">
+              <div
+                className={`h-full rounded-2xl border-l-4 p-6 md:p-7 pl-7 ${
+                  step.title === 'Generate Seller Kits'
+                    ? 'border-accent bg-accent-soft/30'
+                    : 'border-accent/60 bg-cream/50'
+                }`}
+              >
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                   {i + 1}
                 </span>
-                <h3 className="mt-5 text-lg font-semibold text-ink">{step.title}</h3>
-                <p className="mt-3 text-warm-600 leading-relaxed">{step.body}</p>
+                <h3 className="mt-4 text-base font-semibold text-ink leading-snug">{step.title}</h3>
+                <p className="mt-3 text-sm text-warm-600 leading-relaxed">{step.body}</p>
               </div>
-              {i < STEPS.length - 1 && (
-                <div className="hidden md:block absolute top-12 -right-4 w-8 h-0.5 bg-warm-400/40 -translate-y-1/2" aria-hidden />
-              )}
             </div>
           ))}
         </div>
