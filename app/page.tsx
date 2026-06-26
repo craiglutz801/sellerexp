@@ -6,7 +6,9 @@ import CostOfFriction from '@/components/CostOfFriction'
 import BrokenFeedbackLoop from '@/components/BrokenFeedbackLoop'
 import Solution from '@/components/Solution'
 import TwoOutcomes from '@/components/TwoOutcomes'
+import AgenticActionLayer from '@/components/AgenticActionLayer'
 import EnablementKits from '@/components/EnablementKits'
+import SellerCoachSection from '@/components/SellerCoachSection'
 import KitAnatomy from '@/components/KitAnatomy'
 import HowItWorks from '@/components/HowItWorks'
 import WhatWeMeasure from '@/components/WhatWeMeasure'
@@ -32,7 +34,9 @@ export default function Home() {
         <BrokenFeedbackLoop />
         <Solution />
         <TwoOutcomes />
+        <AgenticActionLayer />
         <EnablementKits />
+        <SellerCoachSection />
         <KitAnatomy />
         <HowItWorks />
         <WhatWeMeasure />

@@ -18,14 +18,15 @@ export const CAPABILITIES = [
       'Compare teams, segments, roles, and external benchmarks to understand where friction is abnormal.',
   },
   {
-    title: 'AI Recommendations',
-    description: 'Prioritize the system-level actions most likely to improve performance.',
+    title: 'AI Action Layer',
+    description:
+      'Turn seller signals into practical next steps — from leadership priorities and root-cause briefs to private seller guidance and focused enablement.',
+    badge: 'New' as const,
   },
   {
     title: 'IC Enablement Kits',
     description:
       'Turn each seller’s feedback into a private, personalized kit of resources, modules, and next steps.',
-    badge: 'New' as const,
     featured: true,
   },
 ]
@@ -41,15 +42,15 @@ export const HOW_IT_WORKS_STEPS = [
   },
   {
     title: 'Deliver Leadership Intelligence',
-    body: 'Executives receive dashboards, summaries, benchmark views, and AI-guided recommendations on what is helping or hurting sellers.',
+    body: 'Executives receive dashboards, summaries, benchmark views, and AI-guided briefs that clarify what is helping or hurting sellers — and what deserves action first.',
   },
   {
     title: 'Generate Seller Kits',
-    body: 'Each IC receives a private enablement kit based on their own feedback, scores, stage confidence, and context.',
+    body: 'Each IC receives a private enablement kit based on their own feedback, scores, stage confidence, and context — with an AI guide that helps them apply the right support to real work.',
   },
   {
     title: 'Improve and Track Progress',
-    body: 'Leaders fix systemic issues while sellers use targeted resources. SellerEXP tracks whether the seller experience improves over time.',
+    body: 'Leaders address systemic friction while sellers use targeted support. SellerEXP tracks whether action is improving experience, confidence, and execution over time.',
   },
 ]
 
@@ -78,7 +79,11 @@ export const STAGE_CONFIDENCE = [
 export const ROI_LEVERS = [
   { title: 'Retention', desc: 'Reduce preventable frustration that contributes to seller attrition.' },
   { title: 'Productivity', desc: 'Remove friction that reduces selling time and slows deal execution.' },
-  { title: 'Enablement utilization', desc: 'Increase usage of existing resources by matching them to real seller needs.' },
+  {
+    title: 'Enablement utilization',
+    desc: 'Increase usage of existing resources by matching them to real seller needs. AI-guided support makes assets easier to find, apply, and use in the next customer conversation.',
+  },
+  { title: 'Time back to selling', desc: 'Reduce the time sellers spend hunting across disconnected content libraries, rebuilding materials, and asking around for the right internal support.' },
   { title: 'Ramp and consistency', desc: 'Help sellers strengthen weak stages with practical modules and templates.' },
   { title: 'Operational focus', desc: 'Prioritize the fixes most likely to improve performance across the organization.' },
 ]
@@ -145,6 +150,11 @@ export const OBJECTIONS = [
     quote: 'Could this overwhelm sellers?',
     response:
       'Kits are intentionally capped at 3–5 modules and focused on the top 2–3 areas where help will matter most.',
+  },
+  {
+    quote: 'Is this just another AI copilot?',
+    response:
+      'No. Generic copilots begin with a prompt. SellerEXP begins with a diagnostic of the seller environment — then uses that context to guide leadership action and provide private support that is relevant to the seller’s real friction.',
   },
 ]
 

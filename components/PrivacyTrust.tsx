@@ -1,4 +1,5 @@
 import SectionEyebrow from '@/components/SectionEyebrow'
+import { AI_GOVERNANCE_CHIPS } from '@/lib/landing/agentic'
 
 const LEADERSHIP_SEES = [
   'Aggregated scores',
@@ -74,6 +75,25 @@ export default function PrivacyTrust() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-10 max-w-3xl mx-auto rounded-2xl border border-warm-400/25 bg-cream/40 p-8">
+          <h3 className="text-lg font-semibold text-ink text-center">AI remains inside the trust model.</h3>
+          <p className="mt-4 text-sm text-warm-600 text-center leading-relaxed">
+            SellerEXP&apos;s AI layer uses approved company knowledge and the seller&apos;s own private context to
+            provide support. It does not expose individual feedback to leadership, create rep rankings, or make
+            employment decisions.
+          </p>
+          <ul className="mt-6 flex flex-wrap justify-center gap-2">
+            {AI_GOVERNANCE_CHIPS.map((chip) => (
+              <li
+                key={chip}
+                className="rounded-full border border-accent/25 bg-accent-soft/40 px-3 py-1.5 text-xs font-medium text-accent-dark"
+              >
+                {chip}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

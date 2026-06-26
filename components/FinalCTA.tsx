@@ -8,8 +8,8 @@ export default function FinalCTA() {
           See What&apos;s Helping — or Preventing — Your Sellers From Winning
         </h2>
         <p className="mt-10 text-warm-600 text-lg max-w-xl mx-auto leading-relaxed">
-          Book a 20-minute overview to see how SellerEXP reveals hidden friction, prioritizes operational improvements,
-          and turns seller feedback into personalized enablement kits.
+          Book a 20-minute overview to see how SellerEXP reveals hidden friction, prioritizes system-level
+          improvements, and gives leaders and sellers AI-guided help to act on what matters next.
         </p>
         <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
           <Link

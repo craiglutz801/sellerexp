@@ -47,6 +47,20 @@ export default function HeroDualMock({ className = '' }: { className?: string })
         <svg className="absolute left-1/2 top-[4.5rem] -translate-x-1/2 w-24 h-8 text-accent/30 hidden sm:block" viewBox="0 0 96 32">
           <path d="M48 0 V12 M20 12 H76 M20 12 V24 M76 12 V24" stroke="currentColor" strokeWidth="1.5" fill="none" />
         </svg>
+        <div className="absolute left-1/2 top-[3.75rem] -translate-x-1/2 hidden sm:block group">
+          <span
+            className="inline-flex rounded-full border border-accent/30 bg-ink/90 px-2.5 py-0.5 text-[0.625rem] font-medium text-accent-light/90 cursor-default"
+            title="Turns seller signals into leadership priorities and private seller guidance."
+          >
+            AI action layer
+          </span>
+          <span
+            role="tooltip"
+            className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 w-52 -translate-x-1/2 rounded-lg border border-white/10 bg-ink px-3 py-2 text-[0.625rem] text-warm-300 opacity-0 shadow-lg transition-opacity group-hover:opacity-100"
+          >
+            Turns seller signals into leadership priorities and private seller guidance.
+          </span>
+        </div>
       </div>
     </div>
   )
